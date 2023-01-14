@@ -1,5 +1,5 @@
 //import { Filter } from 'components/Filter';
-//import { ContactForm } from 'components/ContactForm';
+import { ContactForm } from 'components/ContactForm';
 //import { ContactList } from 'components/ContactList';
 import { Container, PhoneTitle, ContactTitle, IconWrapper } from './Contacts.styled';
 import { AiOutlineApple } from 'react-icons/ai';
@@ -12,7 +12,7 @@ export default function Contacts() {
         <PhoneTitle>Phonebook</PhoneTitle>
         <AiOutlineApple color="#D71868" fontSize="3em" />
       </IconWrapper>
-      <div>Here will be markup</div>
+      <ContactForm />
       <IconWrapper>
         <ContactTitle>Contacts</ContactTitle>
         <AiOutlineUsergroupAdd color="#D71868" fontSize="3em" />

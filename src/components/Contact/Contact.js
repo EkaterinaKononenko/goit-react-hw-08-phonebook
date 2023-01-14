@@ -1,4 +1,4 @@
-import { ContactText, ContactButton } from './Contact.styled';
+/*import { ContactText, ContactButton } from './Contact.styled';
 import { useDispatch } from 'react-redux';
 import { deleteContact } from 'redux/contacts/operations';
 
@@ -13,3 +13,4 @@ export const Contact = ({ id, name, number }) => {
     </ContactText>
   );
 };
+*/
