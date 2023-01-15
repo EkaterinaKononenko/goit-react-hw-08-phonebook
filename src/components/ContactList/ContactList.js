@@ -1,5 +1,4 @@
-
-/*import React from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Contact } from 'components/Contact/Contact';
 import { ContactListWrap } from './ContactList.styled';
@@ -42,4 +41,4 @@ ContactList.propTypes = {
       number: PropTypes.string.isRequired,
     })
   ),
-};*/
+};
