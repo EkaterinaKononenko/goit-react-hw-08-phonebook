@@ -141,6 +141,7 @@ export const ContactForm = () => {
           fontSize="16px"
           fontFamily="Raleway, sans-serif"
           fontWeight="400"
+          _hover={{ bg: 'red.300' }}
         >
           Add contact
         </Button>
