@@ -9,11 +9,15 @@ export default function Home() {
       justifyContent="center"
       backgroundColor="#B0E0E6"
     >
-      <Text as="h1" fontWeight="500" fontSize="48" textAlign="center">
+      <Text
+        as="h1"
+        fontWeight="500"
+        fontSize="60px"
+        textAlign="center"
+        bgGradient="linear(to-l, #7928CA, #FF0080)"
+        bgClip="text"
+      >
         Phonebook welcome page{' '}
-        <Text as="span" role="img" aria-label="Greeting icon">
-          💁‍♀️
-        </Text>
       </Text>
     </Flex>
   );
