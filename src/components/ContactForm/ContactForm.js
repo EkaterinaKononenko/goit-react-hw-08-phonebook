@@ -9,10 +9,9 @@ import {
   Error,
   BtnAddContact,
 } from './ContactForm.styled';
- import { useDispatch } from 'react-redux';
-//import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from 'redux/contacts/operations';
-//import { selectContacts } from 'redux/contacts/selectors';
+import { selectContacts } from 'redux/contacts/selectors';
 
 const nanoid = customAlphabet('1234567890abcdef', 10);
 
@@ -45,8 +44,8 @@ const initualValues = {
 
 export const ContactForm = () => {
   const dispatch = useDispatch();
-  //const contacts = useSelector(selectContacts);
- // console.log(contacts);
+  const contacts = useSelector(selectContacts);
+ console.log(contacts);
 
  const handleSubmit = (values, { resetForm }) => {
     const newContact = {
@@ -55,9 +54,9 @@ export const ContactForm = () => {
       number: values.number,
     };
 
-    /*if (contacts.some(contact => contact.name === newContact.name)) {
+    if (contacts.some(contact => contact.name === newContact.name)) {
       return alert(`Contact ${newContact.name} has already been registrated.`);
-    }*/
+    }
     dispatch(addContact(newContact));
     resetForm();
   };
