@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Contact } from 'components/Contact/Contact';
-import { ContactListWrap } from './ContactList.styled';
+import { Box } from '@chakra-ui/react';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectValueFilter, selectContacts } from 'redux/contacts/selectors';
 import { useEffect } from 'react';
@@ -25,11 +25,11 @@ export const ContactList = () => {
     : contacts;
 
   return (
-    <ContactListWrap>
+    <Box as="ul" alignItems="center" listStyleType="none">
       {filteredContacts.map(({ id, name, number }) => {
         return <Contact key={id} id={id} name={name} number={number} />;
       })}
-    </ContactListWrap>
+    </Box>
   );
 };
 
