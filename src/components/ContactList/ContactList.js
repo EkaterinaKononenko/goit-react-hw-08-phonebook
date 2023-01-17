@@ -25,7 +25,12 @@ export const ContactList = () => {
     : contacts;
 
   return (
-    <Box as="ul" alignItems="center" listStyleType="none">
+    <Box
+      as="ul"
+      alignItems="center"
+      listStyleType="none"
+      backgroundColor="#B0E0E6"
+    >
       {filteredContacts.map(({ id, name, number }) => {
         return <Contact key={id} id={id} name={name} number={number} />;
       })}

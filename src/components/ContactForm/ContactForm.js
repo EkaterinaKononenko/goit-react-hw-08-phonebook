@@ -1,5 +1,5 @@
 import React from 'react';
-import { Formik, Form, Field } from 'formik';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as yup from 'yup';
 import { customAlphabet } from 'nanoid';
 import {
@@ -80,8 +80,7 @@ export const ContactForm = () => {
           flexDirection="column"
           alignItems="center"
           gap="4px"
-          color="#D71868"
-          fontSize="16px"
+          fontSize="20px"
           fontFamily="Raleway, sans-serif"
           fontWeight="700"
         >
@@ -91,15 +90,21 @@ export const ContactForm = () => {
             type="text"
             name="name"
             id="name"
-            border="2px"
-            borderColor="#FD7B7C"
-            borderRadius="5px"
-            bg="#FFCBDB"
-            color="#D71868"
-            outline="none"
+            placeholder="Name"
+            borderColor="#0000FF"
+            bgGradient={[
+              'linear(to-tr, teal.300, yellow.400)',
+              'linear(to-t, blue.200, teal.500)',
+              'linear(to-b, orange.100, purple.300)',
+            ]}
             w="256px"
           />
-          <FormErrorMessage color="#DE5D83" name="name" component="div" />
+          <FormErrorMessage
+            as={ErrorMessage}
+            color="#DE5D83"
+            name="name"
+            component="div"
+          />
         </FormLabel>
         <FormLabel
           htmlFor="number"
@@ -107,8 +112,7 @@ export const ContactForm = () => {
           flexDirection="column"
           alignItems="center"
           gap="4px"
-          color="#D71868"
-          fontSize="16px"
+          fontSize="20px"
           fontFamily="Raleway, sans-serif"
           fontWeight="700"
         >
@@ -120,28 +124,41 @@ export const ContactForm = () => {
             name="number"
             pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
             title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
-            border="2px"
-            borderColor="#FD7B7C"
-            borderRadius="5px"
-            bg="#FFCBDB"
-            color="#D71868"
-            outline="none"
+            placeholder="Phone number"
+            borderColor="#0000FF"
+            bgGradient={[
+              'linear(to-tr, teal.300, yellow.400)',
+              'linear(to-t, blue.200, teal.500)',
+              'linear(to-b, orange.100, purple.300)',
+            ]}
             w="256px"
           />
-          <FormErrorMessage color="#DE5D83" name="number" component="div" />
+          <FormErrorMessage
+            as={ErrorMessage}
+            color="purple"
+            name="number"
+            component="div"
+          />
         </FormLabel>
         <Button
           as="button"
           type="submit"
-          border="2px"
-          borderColor="#FF9BAA"
-          borderRadius="5px"
-          bg="#FFCBDB"
-          color="#D71868"
-          fontSize="16px"
-          fontFamily="Raleway, sans-serif"
-          fontWeight="400"
-          _hover={{ bg: 'red.300' }}
+          border="1px"
+          borderColor="#0000FF"
+          fontSize="20px"
+          bgGradient={[
+            'linear(to-tr, teal.300, yellow.400)',
+            'linear(to-t, blue.200, teal.500)',
+            'linear(to-b, orange.100, purple.300)',
+          ]}
+          size="md"
+          mb="20px"
+          _hover={{
+            bg: 'purple.400',
+            color: 'purple.100',
+            border: '3px',
+            borderColor: '#0000FF',
+          }}
         >
           Add contact
         </Button>

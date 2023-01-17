@@ -4,7 +4,7 @@ import {
   FormControl,
   FormLabel,
   Input,
-  Button
+  Button,
 } from '@chakra-ui/react';
 
 export const RegisterForm = () => {

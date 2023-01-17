@@ -11,8 +11,7 @@ export const Filter = () => {
   return (
     <FormControl
       as="div"
-      color="#D71868"
-      fontSize="16px"
+      fontSize="20px"
       fontFamily="Raleway, sans-serif"
       fontWeight="700"
     >
@@ -22,6 +21,10 @@ export const Filter = () => {
         display="flex"
         flexDirection="column"
         alignItems="center"
+        gap="4px"
+        fontSize="20px"
+        fontFamily="Raleway, sans-serif"
+        fontWeight="700"
       >
         Find contacts by name
       </FormLabel>
@@ -32,11 +35,13 @@ export const Filter = () => {
         id="filter"
         value={filter}
         onChange={e => dispatch(onFilter(e.currentTarget.value))}
-        border="2px"
-        borderColor="#FF9BAA"
-        borderRadius="5px"
-        bg="#FFCBDB"
-        color="#D71868"
+        placeholder="Contact name"
+        borderColor="#0000FF"
+        bgGradient={[
+          'linear(to-tr, teal.300, yellow.400)',
+          'linear(to-t, blue.200, teal.500)',
+          'linear(to-b, orange.100, purple.300)',
+        ]}
         outline="none"
         w="256px"
       />

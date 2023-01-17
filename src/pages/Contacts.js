@@ -9,9 +9,7 @@ export default function Contacts() {
   return (
     <Box
       as="div"
-      w="512px"
-      h="700px"
-      bg="linear-gradient(45deg, #E28090, #FADADD, #FDBDBA)"
+      backgroundColor="#B0E0E6"
       p="16px"
       textAlign="center"
       m="10px auto"
@@ -22,7 +20,7 @@ export default function Contacts() {
       <Flex as="div" alignItems="center" justifyContent="center">
         <Heading
           as="h1"
-          color="#D71868"
+          color="purple"
           fontSize="24px"
           fontFamily="Raleway, sans-serif"
           fontWeight="400"
@@ -30,13 +28,13 @@ export default function Contacts() {
         >
           Phonebook
         </Heading>
-        <AiOutlineApple color="#D71868" fontSize="3em" />
+        <AiOutlineApple color="purple" fontSize="3em" />
       </Flex>
       <ContactForm />
       <Flex as="div" alignItems="center" justifyContent="center">
         <Heading
           as="h2"
-          color="#D71868"
+          color="purple"
           fontSize="24px"
           fontFamily="Raleway, sans-serif"
           fontWeight="400"
@@ -44,7 +42,7 @@ export default function Contacts() {
         >
           Contacts
         </Heading>
-        <AiOutlineUsergroupAdd color="#D71868" fontSize="3em" />
+        <AiOutlineUsergroupAdd color="purple" fontSize="3em" />
       </Flex>
       <Filter />
       <ContactList />
