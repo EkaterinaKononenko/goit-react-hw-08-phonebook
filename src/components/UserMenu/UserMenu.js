@@ -10,7 +10,10 @@ export const UserMenu = () => {
   return (
     <Flex as="div" alignItems="center" gap="12px">
       <Box as="div" display="flex">
-        <Avatar name={user.name} src="avatar.jpg" />
+        <Avatar
+          name={user.name}
+          src="avatar.jpg"
+        />
         <Box as="div">
           <Text as="p" fontWeight="700">
             Welcome, {user.name}
