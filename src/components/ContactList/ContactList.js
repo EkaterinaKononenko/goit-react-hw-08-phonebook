@@ -29,7 +29,8 @@ export const ContactList = () => {
       as="ul"
       alignItems="center"
       listStyleType="none"
-      backgroundColor="#B0E0E6"
+      color="purple"
+      backgroundColor="#F0F0F0"
     >
       {filteredContacts.map(({ id, name, number }) => {
         return <Contact key={id} id={id} name={name} number={number} />;

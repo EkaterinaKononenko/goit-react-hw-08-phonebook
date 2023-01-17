@@ -9,12 +9,12 @@ export default function Contacts() {
   return (
     <Box
       as="div"
-      backgroundColor="#B0E0E6"
+      backgroundColor="#F0F0F0"
       p="16px"
       textAlign="center"
       m="10px auto"
       borderRadius="10px"
-      boxShadow="24px 20px 31px 0px rgba(242, 120, 147, 0.2)"
+      // boxShadow="24px 20px 31px 0px rgba(242, 120, 147, 0.2)"
       lineHeight="1.8"
     >
       <Flex as="div" alignItems="center" justifyContent="center">

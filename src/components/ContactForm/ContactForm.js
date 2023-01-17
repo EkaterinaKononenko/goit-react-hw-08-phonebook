@@ -7,7 +7,7 @@ import {
   FormControl,
   FormLabel,
   Input,
-  FormErrorMessage
+  FormErrorMessage,
 } from '@chakra-ui/react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from 'redux/contacts/operations';
@@ -53,13 +53,15 @@ export const ContactForm = () => {
       name: values.name,
       number: values.number,
     };
-
-    if (contacts.some(contact => contact.name === newContact.name)) {
+    
+     if (contacts.some(contact => contact.name === newContact.name)) {
       return alert(`Contact ${newContact.name} has already been registrated.`);
     }
-    dispatch(addContact(newContact));
+     dispatch(addContact(newContact));
     resetForm();
   };
+   
+   
 
   return (
     <Formik
@@ -80,6 +82,7 @@ export const ContactForm = () => {
           flexDirection="column"
           alignItems="center"
           gap="4px"
+          color="purple"
           fontSize="20px"
           fontFamily="Raleway, sans-serif"
           fontWeight="700"
@@ -112,6 +115,7 @@ export const ContactForm = () => {
           flexDirection="column"
           alignItems="center"
           gap="4px"
+          color="purple"
           fontSize="20px"
           fontFamily="Raleway, sans-serif"
           fontWeight="700"

@@ -22,6 +22,7 @@ export const Filter = () => {
         flexDirection="column"
         alignItems="center"
         gap="4px"
+        color="purple"
         fontSize="20px"
         fontFamily="Raleway, sans-serif"
         fontWeight="700"

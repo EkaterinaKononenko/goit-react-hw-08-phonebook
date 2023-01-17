@@ -7,7 +7,7 @@ export default function Home() {
       minH="calc(100vh - 50px)"
       alignItems="center"
       justifyContent="center"
-      backgroundColor="#B0E0E6"
+      backgroundColor="#F0F0F0"
     >
       <Text
         as="h1"

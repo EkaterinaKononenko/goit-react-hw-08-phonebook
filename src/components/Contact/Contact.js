@@ -2,7 +2,8 @@ import { useDispatch } from 'react-redux';
 import { deleteContact } from 'redux/contacts/operations';
 import {
   Button,
- Text
+  Text,
+  Avatar
 } from '@chakra-ui/react';
 
 export const Contact = ({ id, name, number }) => {
@@ -18,6 +19,7 @@ export const Contact = ({ id, name, number }) => {
       display="flex"
       justifyContent="space-between"
     >
+      <Avatar name="contact" src="contact_book2.png" />
       {name}:<Text as="span">{number}</Text>
       <Button
         as="button"
