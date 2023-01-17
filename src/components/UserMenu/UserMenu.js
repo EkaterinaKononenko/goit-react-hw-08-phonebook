@@ -30,9 +30,7 @@ export const UserMenu = () => {
         h="56px"
         fontWeight="700"
         color="#2a363b"
-        border="1px"
         borderRadius="5px"
-        borderColor="#0000FF"
         fontSize="20px"
         bgGradient={[
           'linear(to-tr, teal.300, yellow.400)',
@@ -41,10 +39,10 @@ export const UserMenu = () => {
         ]}
         size="md"
         _hover={{
-          background: 'purple.400',
+          background: 'purple.300',
           color: 'purple.100',
           border: '3px',
-          borderColor: '#0000FF',
+          borderColor: '#9370DB',
         }}
       >
         Logout

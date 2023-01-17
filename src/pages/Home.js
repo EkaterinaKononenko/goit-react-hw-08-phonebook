@@ -8,6 +8,8 @@ export default function Home() {
       alignItems="center"
       justifyContent="center"
       backgroundColor="#F0F0F0"
+      boxShadow="dark-lg"
+      borderRadius="10px"
     >
       <Text
         as="h1"

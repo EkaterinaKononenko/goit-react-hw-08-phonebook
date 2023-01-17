@@ -37,7 +37,7 @@ export const Filter = () => {
         value={filter}
         onChange={e => dispatch(onFilter(e.currentTarget.value))}
         placeholder="Contact name"
-        borderColor="#0000FF"
+        boxShadow="md"
         bgGradient={[
           'linear(to-tr, teal.300, yellow.400)',
           'linear(to-t, blue.200, teal.500)',
@@ -45,6 +45,10 @@ export const Filter = () => {
         ]}
         outline="none"
         w="256px"
+        _hover={{
+          border: '1px',
+          borderColor: '#9370DB',
+        }}
       />
     </FormControl>
   );

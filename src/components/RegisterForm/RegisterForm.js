@@ -42,12 +42,16 @@ export const RegisterForm = () => {
         type="name"
         name="name"
         placeholder="Username"
-        borderColor="#0000FF"
         bgGradient={[
           'linear(to-tr, teal.300, yellow.400)',
           'linear(to-t, blue.200, teal.500)',
           'linear(to-b, orange.100, purple.300)',
         ]}
+        boxShadow="md"
+        _hover={{
+          border: '1px',
+          borderColor: '#9370DB',
+        }}
       />
       <FormLabel as="label" htmlFor="email" display="flex" fontSize="20px">
         Email{' '}
@@ -57,12 +61,16 @@ export const RegisterForm = () => {
         type="email"
         name="email"
         placeholder="Email"
-        borderColor="#0000FF"
         bgGradient={[
           'linear(to-tr, teal.300, yellow.400)',
           'linear(to-t, blue.200, teal.500)',
           'linear(to-b, orange.100, purple.300)',
         ]}
+        boxShadow="md"
+        _hover={{
+          border: '1px',
+          borderColor: '#9370DB',
+        }}
       />
       <FormLabel as="label" htmlFor="password" display="flex" fontSize="20px">
         Password{' '}
@@ -72,20 +80,22 @@ export const RegisterForm = () => {
         type="password"
         name="password"
         placeholder="Password"
-        borderColor="#0000FF"
         bgGradient={[
           'linear(to-tr, teal.300, yellow.400)',
           'linear(to-t, blue.200, teal.500)',
           'linear(to-b, orange.100, purple.300)',
         ]}
+        boxShadow="md"
+        _hover={{
+          border: '1px',
+          borderColor: '#9370DB',
+        }}
       />
       <Button
         as="button"
         type="submit"
         ml="121px"
         mt="10px"
-        border="1px"
-        borderColor="#0000FF"
         fontSize="20px"
         bgGradient={[
           'linear(to-tr, teal.300, yellow.400)',
@@ -93,11 +103,12 @@ export const RegisterForm = () => {
           'linear(to-b, orange.100, purple.300)',
         ]}
         size="md"
+        boxShadow="md"
         _hover={{
-          background: 'purple.400',
+          background: 'purple.300',
           color: 'purple.100',
-          border: '3px',
-          borderColor: '#0000FF',
+          border: '1px',
+          borderColor: '#9370DB',
         }}
       >
         Register

@@ -94,12 +94,16 @@ export const ContactForm = () => {
             name="name"
             id="name"
             placeholder="Name"
-            borderColor="#0000FF"
+            boxShadow="md"
             bgGradient={[
               'linear(to-tr, teal.300, yellow.400)',
               'linear(to-t, blue.200, teal.500)',
               'linear(to-b, orange.100, purple.300)',
             ]}
+            _hover={{
+              border: '1px',
+              borderColor: '#9370DB',
+            }}
             w="256px"
           />
           <FormErrorMessage
@@ -129,13 +133,17 @@ export const ContactForm = () => {
             pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
             title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
             placeholder="Phone number"
-            borderColor="#0000FF"
+            boxShadow="md"
             bgGradient={[
               'linear(to-tr, teal.300, yellow.400)',
               'linear(to-t, blue.200, teal.500)',
               'linear(to-b, orange.100, purple.300)',
             ]}
             w="256px"
+            _hover={{
+              border: '1px',
+              borderColor: '#9370DB',
+            }}
           />
           <FormErrorMessage
             as={ErrorMessage}
@@ -147,8 +155,6 @@ export const ContactForm = () => {
         <Button
           as="button"
           type="submit"
-          border="1px"
-          borderColor="#0000FF"
           fontSize="20px"
           bgGradient={[
             'linear(to-tr, teal.300, yellow.400)',
@@ -157,11 +163,12 @@ export const ContactForm = () => {
           ]}
           size="md"
           mb="20px"
+          boxShadow="md"
           _hover={{
-            bg: 'purple.400',
+            bg: 'purple.300',
             color: 'purple.100',
-            border: '3px',
-            borderColor: '#0000FF',
+            border: '1px',
+            borderColor: '#9370DB',
           }}
         >
           Add contact

@@ -7,7 +7,7 @@ export default function Register() {
     <Box
       as="div"
       m="0 auto"
-      backgroundColor="#B0E0E6"
+      bgColor="#F0F0F0"
       w="400px"
       borderRadius="10px"
       boxShadow="dark-lg"

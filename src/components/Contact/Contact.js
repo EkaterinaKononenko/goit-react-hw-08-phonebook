@@ -25,9 +25,7 @@ export const Contact = ({ id, name, number }) => {
         as="button"
         type="button"
         onClick={() => dispatch(deleteContact(id))}
-        border="1px"
         borderRadius="5px"
-        borderColor="#0000FF"
         fontSize="20px"
         bgGradient={[
           'linear(to-tr, teal.300, yellow.400)',
@@ -36,11 +34,12 @@ export const Contact = ({ id, name, number }) => {
         ]}
         size="md"
         ml="5px"
+        boxShadow="md"
         _hover={{
           background: 'purple.400',
           color: 'purple.100',
-          border: '3px',
-          borderColor: '#0000FF',
+          border: '1px',
+          borderColor: '#9370DB',
         }}
       >
         Delete
