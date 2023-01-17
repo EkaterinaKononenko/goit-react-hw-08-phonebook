@@ -69,8 +69,8 @@ export const ContactForm = () => {
       validationSchema={schema}
       onSubmit={handleSubmit}
     >
-      <FormControl
-        as={Form}
+      <Form
+        as={FormControl}
         display="flex"
         flexDirection="column"
         alignItems="center"
@@ -88,8 +88,8 @@ export const ContactForm = () => {
           fontWeight="700"
         >
           Name
-          <Input
-            as={Field}
+          <Field
+            as={Input}
             type="text"
             name="name"
             id="name"
@@ -106,8 +106,8 @@ export const ContactForm = () => {
             }}
             w="256px"
           />
-          <FormErrorMessage
-            as={ErrorMessage}
+          <ErrorMessage
+            as={FormErrorMessage}
             color="#DE5D83"
             name="name"
             component="div"
@@ -125,8 +125,8 @@ export const ContactForm = () => {
           fontWeight="700"
         >
           Number
-          <Input
-            as={Field}
+          <Field
+            as={Input}
             id="number"
             type="tel"
             name="number"
@@ -145,8 +145,8 @@ export const ContactForm = () => {
               borderColor: '#9370DB',
             }}
           />
-          <FormErrorMessage
-            as={ErrorMessage}
+          <ErrorMessage
+            as={FormErrorMessage}
             color="purple"
             name="number"
             component="div"
@@ -173,7 +173,7 @@ export const ContactForm = () => {
         >
           Add contact
         </Button>
-      </FormControl>
+      </Form>
     </Formik>
   );
 };
